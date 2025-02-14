@@ -1,4 +1,9 @@
 package pro.progr.diamondapi
 
-class DiamondInterface {
+import kotlinx.coroutines.flow.Flow
+
+interface DiamondInterface {
+    fun getDiamondsCount(): Flow<Int>
+
+    fun updateDianodsCount(substract : Int) : Boolean
 }
