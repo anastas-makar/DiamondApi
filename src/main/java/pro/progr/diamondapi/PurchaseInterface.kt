@@ -1,0 +1,3 @@
+package pro.progr.diamondapi
+
+interface PurchaseInterface : SpendDiamondsInterface, GetDiamondsCountInterface

@@ -1,0 +1,3 @@
+package pro.progr.diamondapi
+
+interface AccumulateInterface : AddDiamondsInterface, GetDiamondsCountInterface
