@@ -26,7 +26,7 @@ publishing {
 
             groupId = "pro.progr"
             artifactId = "diamond-api"
-            version = "1.0.0-alpha"
+            version = "1.0.2-alpha"
         }
     }
 

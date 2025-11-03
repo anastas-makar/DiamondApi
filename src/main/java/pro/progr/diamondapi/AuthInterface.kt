@@ -7,7 +7,7 @@ interface AuthInterface {
 
     fun getSessionId() : String?
 
-    fun <T> getHash(content: T) : String
+    fun getHash(bytes: ByteArray) : String
 
     fun getDeviceId() : String
 
