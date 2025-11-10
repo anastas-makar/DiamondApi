@@ -11,8 +11,6 @@ interface AuthInterface {
 
     fun setSessionId(sessionId : String)
 
-    fun getSessionSecret() : String?
-
     /**
      * Секрет, который сохраняется в зашифрованном виде один раз при авторизации
      */
