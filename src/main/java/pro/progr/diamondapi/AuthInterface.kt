@@ -18,6 +18,8 @@ interface AuthInterface {
 
     fun clearSession()
 
+    fun getEpochSecond() : Long
+
     fun getNonce() : String
 
     fun getHash(sessionId: String,
@@ -25,7 +27,10 @@ interface AuthInterface {
                 nonce: String,
                 method: String,
                 pathQuery: String,
+                epochSecond: Long,
                 bodyBytes: ByteArray) : String
+
+    fun getSignAlg() : String
 
     fun getDeviceId() : String
 
