@@ -23,6 +23,8 @@ interface AuthInterface {
     fun getHash(sessionId: String,
                 deviceId: String,
                 nonce: String,
+                method: String,
+                pathQuery: String,
                 bodyBytes: ByteArray) : String
 
     fun getDeviceId() : String
