@@ -9,12 +9,12 @@ interface AuthInterface {
 
     fun getSessionId() : String?
 
-    fun setSessionId(sessionId : String)
-
     /**
-     * Секрет, который сохраняется в зашифрованном виде один раз при авторизации
+     * Id сессии и
+     * секрет, который сохраняется в зашифрованном виде один раз при авторизации
      */
-    fun setSessionSecret(sessionSecret : String)
+    fun setSession(sessionId: String,
+                   sessionSecret: String)
 
     fun clearSession()
 
